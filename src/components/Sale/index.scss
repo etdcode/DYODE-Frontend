@@ -1,84 +1,96 @@
 .sale {
-    display: grid;
-  
-    img {
+  display: grid;
+
+  img {
+    width: 100%;
+  }
+
+  .sale-form {
+    right: 0;
+    padding: 54px;
+    position: absolute;
+
+    .header {
+      font-family: Pacifico;
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 105px;
+      letter-spacing: 0em;
+      color: white;
+      text-align: left;
+      padding: 0;
+      background: none;
+      margin: 0;
       width: 100%;
     }
-  
-    .sale-form {
-      right: 0;
-      padding: 54px;
-      position: absolute;
-  
+
+    .subheader {
+      font-family: Lato;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 31px;
+      letter-spacing: 0em;
+      color: white;
+      text-align: left;
+      margin: 0 0 24px;
+    }
+
+    .button {
+      width: 129px;
+      border-radius: 0px;
+      background: var(--green);
+      font-family: Lato;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: white;
+      border: 2px solid var(--green);
+      cursor: pointer;
+      text-align: center;
+      padding: 14px 0 12px;
+
+      &:hover {
+        color: var(--green);
+        background: transparent;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: grid;
+      justify-items: center;
+      position: relative;
+      background: #EFEFEF;
+
+      padding: 16px 0 32px;
+
       .header {
-        font-family: Pacifico;
-        font-size: 60px;
-        font-weight: 400;
-        line-height: 105px;
-        letter-spacing: 0em;
-        color: white;
-        text-align: left;
-        padding: 0;
-        background: none;
-        margin: 0;
-        width: 100%;
-      }
-  
-      .subheader {
-        font-family: Lato;
+        display: block;
+        color: var(--green);
         font-size: 26px;
-        font-weight: 400;
-        line-height: 31px;
-        letter-spacing: 0em;
-        color: white;
-        text-align: left;
-        margin: 0 0 24px;
-      }
-  
-      .button {
-        width: 129px;
-        border-radius: 0px;
-        background: var(--green);
-        font-family: Lato;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: white;
-  
+        line-height: 45px;
         text-align: center;
-        padding: 14px 0 12px;
       }
-  
-      @media only screen and (max-width: 768px) {
-        display: grid;
-        justify-items: center;
-        position: relative;
-        background: #EFEFEF;
-  
-        padding: 16px 0 32px;
-  
-        .header {
-          display: block;
-          color: var(--green);
-          font-size: 26px;
-          line-height: 45px;
-          text-align: center;
-        }
-  
-        .subheader {
-          color: var(--green);
-          font-size: 14px;
-          line-height: 16px;
-          text-align: center;
-          margin: 0 0 12px;
-        }
-  
-        .button {
-          background: black;
-          color: white;
-  
-          font-size: 12px;
-          line-height: 14px;
+
+      .subheader {
+        color: var(--green);
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        margin: 0 0 12px;
+      }
+
+      .button {
+        background: black;
+        color: white;
+        border: 2px solid black;
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 14px;
+
+        &:hover {
+          color: black;
+          background: transparent;
         }
       }
     }
   }
+}

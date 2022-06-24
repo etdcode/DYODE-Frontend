@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
         wrapAround={true}
         zoomScale={0.1}
         dragging={false}
-        withoutControls={true}
+        withoutControls={window.innerWidth < 768}
         defaultControlsConfig={{
           pagingDotsStyle: {
             fill: "white",

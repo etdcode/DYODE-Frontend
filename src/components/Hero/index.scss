@@ -30,6 +30,7 @@
         .hero-content {
           display: grid;
           justify-items: center;
+          padding: 0 24px !important;
         }
   
         .hero-title {
@@ -100,6 +101,15 @@
           color: white;
           width: fit-content;
           margin-top: 1.6em;
+          border: 2px solid transparent;
+  
+          cursor: pointer;
+  
+          &:hover {
+            border-color: black;
+            background: transparent;
+            color: black;
+          }
         }
       }
     }

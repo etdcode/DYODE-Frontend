@@ -80,6 +80,16 @@
         border: 0;
         background: transparent;
         transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
+  
+        svg {
+          width: 23px;
+          height: 42px;
+  
+          @media screen and (max-width: 768px) {
+            width: 12px;
+            height: 21px;
+          }
+        }
       }
     }
   
