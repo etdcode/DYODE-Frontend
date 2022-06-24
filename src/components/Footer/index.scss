@@ -74,6 +74,10 @@
         @media only screen and (max-width: 768px) {
           .links {
             display: none;
+  
+            a {
+              font-size: 12px;
+            }
           }
   
           .links.open {
@@ -109,6 +113,12 @@
   
             &:active {
               opacity: 0.8;
+            }
+  
+            @media only screen and (max-width: 768px) {
+              img {
+                height: 26px;
+              }
             }
           }
         }
