@@ -1,0 +1,160 @@
+:root {
+    --up: 4;
+    --card-margin: 10px;
+    --cardWidth: calc(96vw/var(--up));
+    --carouselWidth: calc(var(--cardWidth) * var(--num));
+    --carouselLeftMargin: calc(2vw - var(--cardWidth));
+  
+    @media screen and (max-width: 768px) {
+      /*basically mobile*/
+      --up: 2;
+    }
+  }
+  
+  .product {
+    .header {
+      font-family: Pacifico;
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 105px;
+      letter-spacing: 0em;
+      text-align: center;
+      background: transparent;
+      display: block;
+  
+      @media screen and (max-width: 768px) {
+        font-size: 26px;
+        line-height: 46px;
+      }
+    }
+  
+    .carouselwrapper {
+      overflow: hidden;
+      position: relative;
+  
+      margin: 0 0 40px;
+    }
+  
+    .carousel {
+      width: var(--carouselWidth);
+      margin: 0 0 0 var(--carouselLeftMargin);
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+  
+      &.prev {
+        animation-duration: .6s;
+        animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+        animation-name: prev;
+      }
+  
+      &.next {
+        animation-duration: .6s;
+        animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+        animation-name: next;
+      }
+  
+      li {
+        text-align: center;
+        width: calc(var(--cardWidth) - var(--card-margin) * 2);
+        box-sizing: border-box;
+      }
+    }
+  
+    .ui {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      width: calc(100% - var(--card-margin) * 2);
+      justify-content: space-between;
+      padding: var(--card-margin);
+      z-index: 100;
+  
+      button {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        background: transparent;
+        transition: all .2s cubic-bezier(0.39, 0.575, 0.565, 1);
+      }
+    }
+  
+    .card {
+      margin: var(--card-margin);
+      gap: 12px;
+      display: grid;
+  
+      .product-image {
+        width: 100%;
+      }
+  
+      .product-title {
+        font-family: Lato;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+  
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+  
+      .product-description {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-transform: uppercase;
+  
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+  
+      .product-price {
+        font-family: Pacifico;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 46px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: var(--green);
+  
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+    }
+  
+  }
+  
+  @keyframes next {
+    from {
+      transform: translateX(0px);
+    }
+  
+    to {
+      transform: translateX(calc(0px + var(--cardWidth)));
+    }
+  }
+  
+  @keyframes prev {
+    from {
+      transform: translateX(0px);
+    }
+  
+    to {
+      transform: translateX(calc(0px - var(--cardWidth)));
+    }
+  }

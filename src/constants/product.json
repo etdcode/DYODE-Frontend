@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Product 01",
+      "description": "Women's Shirt",
+      "price": "$19.99",
+      "image": "product01.png"
+    },
+    {
+      "title": "Product 02",
+      "description": "Women's Shirt",
+      "price": "$19.99",
+      "image": "product02.png"
+    },
+    {
+      "title": "Product 03",
+      "description": "Women's Shirt",
+      "price": "$19.99",
+      "image": "product03.png"
+    },
+    {
+      "title": "Product 04",
+      "description": "Women's Shirt",
+      "price": "$19.99",
+      "image": "product04.png"
+    },
+    {
+      "title": "Product 05",
+      "description": "Women's Shirt",
+      "price": "$19.99",
+      "image": "product05.png"
+    },
+    {
+      "title": "Product 06",
+      "description": "Women's Shirt",
+      "price": "$19.99",
+      "image": "product06.png"
+    }
+  ]

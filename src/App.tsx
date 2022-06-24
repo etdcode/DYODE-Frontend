@@ -2,6 +2,7 @@ import React from 'react';
 import Header from 'components/Header';
 import PromoBar from 'components/PromoBar';
 import Category from 'components/Category';
+import Product from 'components/Product';
 import Sale from 'components/Sale';
 import Subscribe from 'components/Subscribe';
 import Footer from 'components/Footer';
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <Header />
       <Hero />
       <Category />
+      <Product />
       <Sale />
       <Subscribe />
       <Footer />
