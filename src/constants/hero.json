@@ -1,0 +1,20 @@
+[
+    {
+      "title": "Show New Arrivals",
+      "subtitle": "Our coolest new items are waiting for you!",
+      "color": "green",
+      "image": "hero01.png"
+    },
+    {
+      "title": "Our Fave Tees",
+      "subtitle": "Shop all of our favorites.",
+      "color": "white",
+      "image": "hero02.png"
+    },
+    {
+      "title": "Men's Tees",
+      "subtitle": "Find the perfect shirt.",
+      "color": "white",
+      "image": "hero03.png"
+    }
+  ]
