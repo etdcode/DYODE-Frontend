@@ -1,8 +1,9 @@
+import React from 'react';
+import Header from 'components/Header';
+import PromoBar from 'components/PromoBar';
 import Category from 'components/Category';
 import Sale from 'components/Sale';
-import React from 'react';
-import Header from './components/Header';
-import PromoBar from './components/PromoBar';
+import Subscribe from 'components/Subscribe';
 
 const App: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <Header />
       <Category />
       <Sale />
+      <Subscribe />
     </div>
   );
 }
