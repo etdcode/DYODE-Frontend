@@ -4,15 +4,14 @@
   
     .img {
       width: 100%;
-      height: 596px;
       background-size: cover;
       background-position: center;
   
-      @media only screen and (max-width: 1024px) {
-        height: 387px;
-      }
+      aspect-ratio: calc(163/213);
   
       @media only screen and (max-width: 768px) {
+        aspect-ratio: auto;
+  
         height: 463px;
       }
   
