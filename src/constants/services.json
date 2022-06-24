@@ -1,0 +1,52 @@
+[
+    {
+      "title": "Customer Service",
+      "links": [
+        {
+          "title": "Accessibility",
+          "link": "#"
+        },
+        {
+          "title": "Contact Us",
+          "link": "#"
+        },
+        {
+          "title": "Return Policy",
+          "link": "#"
+        },
+        {
+          "title": "FAQ",
+          "link": "#"
+        },
+        {
+          "title": "Gift Certificates",
+          "link": "#"
+        },
+        {
+          "title": "Wishlist",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        {
+          "title": "About Us",
+          "link": "#"
+        },
+        {
+          "title": "Careers",
+          "link": "#"
+        },
+        {
+          "title": "Press",
+          "link": "#"
+        },
+        {
+          "title": "Affiliates",
+          "link": "#"
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,117 @@
+.footer {
+    background: black;
+    color: white;
+  
+    display: flex;
+    justify-content: space-between;
+  
+    padding: 62px 48px;
+  
+    @media only screen and (max-width: 768px) {
+      display: block;
+  
+      .socials {
+        margin-top: 21px;
+      }
+    }
+  
+    .services {
+      display: flex;
+      gap: 92px;
+      width: 100%;
+  
+      @media only screen and (max-width: 768px) {
+        display: grid;
+        gap: 0px;
+      }
+  
+      .service {
+        .title {
+          display: flex;
+          justify-content: space-between;
+  
+          font-family: Pacifico;
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0em;
+          text-align: left;
+          margin-top: 11px;
+  
+          .toggle {
+            display: none;
+  
+            @media only screen and (max-width: 768px) {
+              display: block;
+            }
+          }
+        }
+  
+        .links {
+          display: grid;
+  
+          a {
+            font-family: Lato;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: left;
+  
+            color: white;
+            text-decoration: none;
+  
+            &:hover {
+              color: rgb(white, 0.6);
+            }
+  
+            &:active {
+              color: rgb(white, 0.8);
+            }
+          }
+        }
+  
+        @media only screen and (max-width: 768px) {
+          .links {
+            display: none;
+          }
+  
+          .links.open {
+            display: grid;
+          }
+        }
+      }
+    }
+  
+    .socials {
+      .title {
+        font-family: Pacifico;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+  
+      .links {
+        display: flex;
+        margin-top: 21px;
+        gap: 48px;
+  
+        .link {
+          a {
+            opacity: 1;
+            text-decoration: none;
+  
+            &:hover {
+              opacity: 0.6;
+            }
+  
+            &:active {
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }

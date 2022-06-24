@@ -4,6 +4,7 @@ import PromoBar from 'components/PromoBar';
 import Category from 'components/Category';
 import Sale from 'components/Sale';
 import Subscribe from 'components/Subscribe';
+import Footer from 'components/Footer';
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
       <Category />
       <Sale />
       <Subscribe />
+      <Footer />
     </div>
   );
 }
